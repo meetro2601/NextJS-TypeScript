@@ -18,6 +18,10 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+It is advisable to not use your own [API routes] inside getServerSideProps and getStaticProps i.e. for pre-rendering data, if you have Data available with you like here. Here I have used it only for Practice purpose.
+
+Only call External APIs inside getServerSideProps and getStaticProps.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
